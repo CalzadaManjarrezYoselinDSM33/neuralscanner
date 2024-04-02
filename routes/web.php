@@ -15,8 +15,7 @@ use App\Http\Controllers\Sistema;
 
 */
 /*----------------------------rutas doctor------------------------ */
-Route::name('/')->get('index',[Sistema::class, 'index']);
-
+Route::get('/', function () { return view('index'); });
 
 Route::name('lista_doctor')->get('lista_doctor',[Sistema::class, 'doctor']);
 
